@@ -1,8 +1,6 @@
 """
 Handwritten digit recognition model
 
-Licensed under the MIT license (see LICENSE for details)
-
 Written by Sven Kortekaas
 """
 
