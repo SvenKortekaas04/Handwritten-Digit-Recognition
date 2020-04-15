@@ -57,6 +57,9 @@ class Model:
         model.add(KL.Dense(50, activation="relu"))
         model.add(KL.Dense(num_classes, activation="softmax"))
 
+        # Compile model
+        self.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+
         return model
 
     def load_weights(self, file: str, by_name=False):
@@ -114,9 +117,6 @@ class Model:
         # one hot encode outputs
         y_train = keras.utils.to_categorical(y_train)
         y_test = keras.utils.to_categorical(y_test)
-
-        # Compile model
-        self.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
         # Callbacks
         callbacks = [
