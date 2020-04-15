@@ -1,4 +1,4 @@
-# Handwriting-Recognition
+# Handwritten Digit Recognition
 
 Detect handwritten digits using a convolutional neural network in Python
 
