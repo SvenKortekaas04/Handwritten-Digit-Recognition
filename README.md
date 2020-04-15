@@ -75,7 +75,3 @@ The above example returns the raw output of the model. To get the actual digit p
 ## Authors
 
 * **Sven Kortekaas** - [SvenKortekaas04](https://github.com/SvenKortekaas04)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
