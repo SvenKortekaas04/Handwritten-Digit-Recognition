@@ -103,7 +103,7 @@ class Model:
         if not os.path.exists(self.model_dir):
             os.makedirs(self.model_dir)
 
-        # reshape to be [samples][width][height][channels], e.g. (1, 28, 28, 1)
+        # reshape to be [samples][width][height][channels]
         x_train = x_train.reshape((x_train.shape[0], 28, 28, 1)).astype('float32')
         x_test = x_test.reshape((x_test.shape[0], 28, 28, 1)).astype('float32')
 
