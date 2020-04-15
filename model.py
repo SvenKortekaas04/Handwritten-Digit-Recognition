@@ -58,7 +58,7 @@ class Model:
         model.add(KL.Dense(num_classes, activation="softmax"))
 
         # Compile model
-        self.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+        model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
         return model
 
