@@ -15,7 +15,7 @@ Firstly, ensure you have Python 3.6 or higher installed
 Clone this repository
 
 ```
-git clone https://github.com/SvenKortekaas04/Handwriting-Recognition.git
+git clone https://github.com/SvenKortekaas04/Handwritten-Digit-Recognition.git
 ```
 
 Make sure you have the right dependencies installed
