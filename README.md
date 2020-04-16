@@ -1,4 +1,4 @@
-# Handwritten Digit Recognition
+# Handwriting-Recognition
 
 Detect handwritten digits using a convolutional neural network in Python
 
@@ -62,7 +62,7 @@ image = cv2.imread("assets/image.png")
 # Make prediction
 prediction = model.predict(image)
 
-# Print the digit that was predicted by the model
+# Print the raw output of the model
 print(prediction)
 ```
 
