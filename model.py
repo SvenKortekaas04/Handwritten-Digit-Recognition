@@ -104,15 +104,15 @@ class Model:
         if not os.path.exists(self.model_dir):
             os.makedirs(self.model_dir)
 
-        # reshape to be [samples][width][height][channels]
+        # Reshape to be [samples][width][height][channels]
         x_train = x_train.reshape((x_train.shape[0], 28, 28, 1)).astype('float32')
         x_test = x_test.reshape((x_test.shape[0], 28, 28, 1)).astype('float32')
 
-        # normalize inputs from 0-255 to 0-1
+        # Normalize inputs from 0-255 to 0-1
         x_train /= 255
         x_test /= 255
 
-        # one hot encode outputs
+        # One hot encode outputs
         y_train = keras.utils.to_categorical(y_train)
         y_test = keras.utils.to_categorical(y_test)
 
@@ -151,10 +151,10 @@ class Model:
         # Grayscale the image
         gray = np.dot(x[...,:3], [0.299, 0.587, 0.114])
 
-        # reshape the image
+        # Reshape the image
         gray = gray.reshape(1, 28, 28, 1)
 
-        # normalize image
+        # Normalize image
         gray /= 255
 
         # Make prediction with the model
