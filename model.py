@@ -126,7 +126,13 @@ class Model:
             callbacks += custom_callbacks
 
         # Train the model
-        self.model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, verbose=verbose, callbacks=callbacks)
+        self.model.fit(x_train, y_train,
+                        batch_size=batch_size,
+                        epochs=epochs,
+                        verbose=verbose,
+                        callbacks=callbacks,
+                        validation_data=(x_test, y_test),
+                        shuffle=True)
 
     def predict(self, x, batch_size=None, verbose=0):
         """
