@@ -34,7 +34,7 @@ As shown in the training example we are training a model on the MNIST dataset of
 
 #### Example
 
-```
+```python
 from model import Model
 from keras.datasets import mnist
 
@@ -48,7 +48,7 @@ model.train(x_train, y_train, x_test, y_test, epochs=10, batch_size=32, verbose=
 
 ### Making predictions with the model
 
-```
+```python
 from model import Model
 import cv2
 
