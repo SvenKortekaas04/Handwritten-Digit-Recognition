@@ -24,7 +24,7 @@ Make sure you have the right dependencies installed
 pip install -r requirements.txt
 ```
 
-## How To Use
+## Usage
 
 For all code examples see the examples folder
 
